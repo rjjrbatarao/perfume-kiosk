@@ -49,3 +49,11 @@ swiper.on("slideChange", function () {
   currentSlide.classList.remove("blur");
   currentSlide.classList.add("contrast");
 });
+
+function clickButton(){
+	Swal.fire({
+	  imageUrl: "https://placeholder.pics/svg/300x300",
+	  imageHeight: 300,
+	  imageAlt: "A tall image"
+	});	
+}
