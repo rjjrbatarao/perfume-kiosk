@@ -81,39 +81,6 @@ body {
   filter: blur(3px);
 }
 
-.cssbuttons-io-button {
-  display: flex;
-  align-items: center;
-  font-family: inherit;
-  cursor: pointer;
-  font-weight: 500;
-  font-size: 16px;
-  padding: 0.7em 1.4em 0.7em 1.1em;
-  color: white;
-  background: #ad5389;
-  background: linear-gradient(
-    0deg,
-    rgba(20, 167, 62, 1) 0%,
-    rgba(102, 247, 113, 1) 100%
-  );
-  border: none;
-  box-shadow: 0 0.7em 1.5em -0.5em #14a73e98;
-  letter-spacing: 0.05em;
-  border-radius: 20em;
-}
-
-.cssbuttons-io-button svg {
-  margin-right: 6px;
-}
-
-.cssbuttons-io-button:hover {
-  box-shadow: 0 0.5em 1.5em -0.5em #14a73e98;
-}
-
-.cssbuttons-io-button:active {
-  box-shadow: 0 0.3em 1em -0.5em #14a73e98;
-}
-
 .swal2-popup {
   width: 100vw !important;
   height: 98vh !important;
@@ -197,12 +164,38 @@ body {
 }
 
 
-.color-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
+.container {
+  position: relative;
+  width: 50%;
+}
+
+/* Make the image responsive */
+.container img {
   width: 100%;
-  height: 100%;
-  background-color: #ff0000; /* Desired color */
-  mix-blend-mode: hue; /* Blends the hue of the overlay with the image */
+  height: auto;
+}
+
+/* Style the button and place it in the middle of the container/image */
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: white;
+  background: #ad5389;
+  background: linear-gradient(
+    0deg,
+    rgba(20, 167, 62, 1) 0%,
+    rgba(102, 247, 113, 1) 100%
+  );
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.container .btn:hover {
+  background-color: black;
 }
