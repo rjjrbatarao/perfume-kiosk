@@ -32,8 +32,10 @@ body {
 }
 
 .x-slider {
+  top: 40%;
+  transform: translateY(-50%);
   width: 100%;
-  height: 500px;
+  height: 800px;
 }
 
 .x-slider .swiper-pagination-bullet {
@@ -112,3 +114,84 @@ body {
   box-shadow: 0 0.3em 1em -0.5em #14a73e98;
 }
 
+.swal2-popup {
+  width: 100vw !important;
+  height: 98vh !important;
+  margin: 0 !important; /* Remove default margins */
+  border-radius: 0 !important; /* Remove default border-radius */
+}
+
+.swal2-container {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.my-confirm-button-class {
+  background-color: #4CAF50 !important; /* Green */
+  color: white !important;
+  border-radius: 10px !important;
+  padding: 10px 20px !important;
+}
+
+.my-cancel-button-class {
+  background-color: #f44336 !important; /* Red */
+  color: white !important;
+  border: 2px solid #f44336 !important;
+  border-radius: 10px !important;
+  padding: 10px 20px !important;
+}
+
+
+.scale-up-center {
+	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+
+.scale-down-center {
+	-webkit-animation: scale-down-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-down-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes scale-down-center {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+}
+@keyframes scale-down-center {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+}
