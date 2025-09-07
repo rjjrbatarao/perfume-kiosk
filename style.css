@@ -195,3 +195,14 @@ body {
             transform: scale(0.5);
   }
 }
+
+
+.color-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ff0000; /* Desired color */
+  mix-blend-mode: hue; /* Blends the hue of the overlay with the image */
+}
